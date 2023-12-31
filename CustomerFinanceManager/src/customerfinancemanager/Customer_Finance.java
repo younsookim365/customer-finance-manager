@@ -74,12 +74,12 @@ public class Customer_Finance {
     private static void displayResults(Customer customer) {
         // Build a string with formatted results
         StringBuilder result = new StringBuilder("Results:\n");
-        result.append(String.format(Locale.ENGLISH, "%-25s: %s%n", "Customer Name", customer.getCustomerName()));
-        result.append(String.format(Locale.ENGLISH, "%-25s: %s%n", "Contact Number", customer.getContactNumber()));
-        result.append(String.format(Locale.ENGLISH, "%-25s: R %,.2f%n", "Product Price", customer.getProductPrice()));
-        result.append(String.format(Locale.ENGLISH, "%-25s: %d%n", "Number of Months", customer.getNumberOfMonths()));
-        result.append(String.format(Locale.ENGLISH, "%-25s: R %,.2f%n", "Monthly Repayment", customer.getMonthlyRepaymentAmount()));
-        result.append(String.format(Locale.ENGLISH, "%-25s: R %,.2f%n", "Total Due", customer.calculateTotalDue()));
+        result.append(String.format(Locale.ENGLISH, "%-29s: %s%n", "Customer Name", customer.getCustomerName()));
+        result.append(String.format(Locale.ENGLISH, "%-29s: %s%n", "Contact Number", customer.getContactNumber()));
+        result.append(String.format(Locale.ENGLISH, "%-33s: R %,.2f%n", "Product Price", customer.getProductPrice()));
+        result.append(String.format(Locale.ENGLISH, "%-27s: %d%n", "Number of Months", customer.getNumberOfMonths()));
+        result.append(String.format(Locale.ENGLISH, "%-26s: R %,.2f%n", "Monthly Repayment", customer.getMonthlyRepaymentAmount()));
+        result.append(String.format(Locale.ENGLISH, "%-36s: R %,.2f%n", "Total Due", customer.calculateTotalDue()));
 
         // Display results using JOptionPane
         JOptionPane.showMessageDialog(null, result.toString());
