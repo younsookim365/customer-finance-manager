@@ -9,33 +9,19 @@ public class Customer_Finance {
     
     /*------------------------------------------main method start------------------------------------------*/
     public static void main(String[] args) {
-        // Test case where no interest applies
-        Finance_Period customer1 = new Finance_Period();
+        // Create an instance of the Finance_Period class to represent a customer 
+        Finance_Period customer = new Finance_Period();
         
         // Input details for the first customer with no interest
-        if (!inputCustomerDetails(customer1, "Enter customer details where no interest applies:")) {
+        if (!inputCustomerDetails(customer, "Enter customer details to see if interest applies:")) {
             // User clicked Cancel
             JOptionPane.showMessageDialog(null, "Application Cancelled");
             System.exit(0);
         }
         
-        // Calculate repayment and display results for the first customer
-        customer1.calculateRepayment();
-        displayResults(customer1);
-
-        // Test case where interest applies
-        Finance_Period customer2 = new Finance_Period();
-        
-        // Input details for the second customer with interest
-        if (!inputCustomerDetails(customer2, "Enter customer details where interest applies:")) {
-            // User clicked Cancel
-            JOptionPane.showMessageDialog(null, "Application Cancelled");
-            System.exit(0);
-        }
-        
-        // Calculate repayment and display results for the second customer
-        customer2.calculateRepayment();
-        displayResults(customer2);
+        // Calculate repayment and display results for the customer
+        customer.calculateRepayment();
+        displayResults(customer);  
     }
     /*-------------------------------------------main method end-------------------------------------------*/ 
 
