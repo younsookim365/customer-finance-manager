@@ -1,7 +1,4 @@
 # Customer Finance Manager
-Java application that helps customers determine their monthly repayment amount for products bought on credit.
-
-## Overview
 This application allow users to input key details related to a customer's credit purchase, such as their name, contact number, the price of the product, and the chosen repayment period in months. It calculates and provides information on the monthly repayment amount and the total amount due. If the number of months to pay for the product is greater than three, the customer will pay 25% interest, or else no interest applies. The maximum number of months to pay for the product is 12.
 
 ## Features
